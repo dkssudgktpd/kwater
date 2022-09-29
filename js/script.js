@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+
+  const modal = $(".modal");
+  const modalClose = $(".modal-close");
+  const modalWrap = $(".modal-wrap");
+  modal.click(function () {
+    modal.fadeOut(500);
+  });
+  modalClose.click(function () {
+    modal.fadeOut(500);
+  });
+  modalWrap.click(function (event) {
+    event.stopPropagation();
+  });
+
+
   // 모바일 메뉴
   let mobileMenu = $('.mobile-menu');
   let mobileBt = $('.all-menu');
